@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: goldenrod;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: goldenrod;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+  border-bottom: 1px solid goldenrod;
+}
+
+h1 {
+  color: goldenrod;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: black;
+  color: goldenrod;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid goldenrod;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+}
