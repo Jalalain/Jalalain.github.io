@@ -98,7 +98,7 @@ span{
     font-size: 3.5rem;
 }
 .home-content h1{
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
@@ -121,10 +121,11 @@ span{
                 0 0 100px var(--main-color);
 }
 .home-content p{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
+    text-align: justify;
 }
 .social-icons a{
     display: inline-flex;
@@ -189,7 +190,7 @@ span{
     position: relative;
 }
 .text-animation span::before{
-    content: "Web Developer";
+    content: "Software Engineer";
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -211,15 +212,15 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "Frontend Designer";
+        content: "AI Engineer";
     }
     21%,
     40%{
-        content: "Web Designer";
+        content: "ML Enginner";
     }
     41%,
     60%{
-        content: "UI / UX Designer";
+        content: "Frontend Developer";
     }
     61%,
     80%{
@@ -227,7 +228,7 @@ span{
     }
     81%,
     100%{
-        content: "Software Tester"
+        content: "Software Tester";
     }
 }
 @keyframes typing{
@@ -381,14 +382,15 @@ span{
 .services-box .services-info{
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: justify;
     max-height: 200px;
     justify-content: left;
     align-items: baseline;
     padding: 5rem 5rem;
+    margin-top: auto;
 }
 .services-info h4{
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 800;
     line-height: 2;
 }
