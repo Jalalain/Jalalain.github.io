@@ -201,8 +201,8 @@ span{
     width: calc(100% + 8px);
     height: 100%;
     border-left: 3px solid var(--bg-color);
-    right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps (14) infinite;
+    /* right: -8px; */
+    animation: cursor 0.6s infinite, typing 10s steps (14) infinite;
 }
 @keyframes cursor{
     to{
@@ -216,19 +216,19 @@ span{
     }
     21%,
     40%{
-        content: "ML Enginner";
+        content: "ML Engineer";
     }
     41%,
     60%{
-        content: "Frontend Developer";
+        content: "ML Engineer";
     }
     61%,
     80%{
-        content: "Web Developer";
+        content: "ML Engineer";
     }
     81%,
     100%{
-        content: "Software Tester";
+        content: "ML Engineer";
     }
 }
 @keyframes typing{
@@ -353,23 +353,38 @@ span{
 }
 .services{
     background: var(--bg-color);
-    color: black;
+    color:  white;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.services-section{
+    background-size: cover;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
 }
 .services h2{
     margin-bottom: 5rem;
-    color: black;
+    color: white;
 }
 .services-container{
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    gap: 2.5rem;
+    align-items: left;
+    gap: 6.5rem;
 }
 .services-box{
-    background-color: var(--main-color);
-    height: 300px;
-    border-radius: 3rem;
+    background-color: transparent;
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
     border: 5px solid transparent;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+                1px 1px 40px #0053b0f7;
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
@@ -384,30 +399,67 @@ span{
     flex-direction: column;
     text-align: left;
     max-height: 200px;
+    font-size: 15px;
+    font-weight: 15px;
     justify-content: left;
     align-items: baseline;
     padding: 5rem 5rem;
     margin-top: auto;
+    border-right: 10px;
+    border-radius: 20px;
 }
-.services-info h4{
-    font-size: 2.7rem;
-    font-weight: 800;
-    line-height: 2;
+.services-info i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-info h3{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.5;
 }
 .services-info p{
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     max-height: 100px;
-    line-height: 1.7;
-    margin: auto;
+    line-height: 1.5;
+    text-align: left;
+    margin: none;
 }
+.services-info a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.read{
+    display: inline-block;
+    padding: 12px 20px;
+    background: #00eeff;
+    border-radius: 40px;
+    font-size: 15px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #00eeff,
+    0 0 25px #00eeff;
+}
+.read:hover{
+    box-shadow: 0 0 5px #00eeff,
+    0 0 25px #00eeff, 0 0 50px #00eeff,
+    0 0 100px #00eeff, 0 0 200px #00eeff;
+}
+
 .testimonials{
     background: var(--second-bg-color);
 }
 .testimonials-box{
     background-size: cover;
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     flex-direction: column;
 }
@@ -427,7 +479,7 @@ span{
 }
 .testimonial-item{
     min-height: 550px;
-    max-width: 450px;
+    max-width: 650px;
     background: rgba(0, 0, 0, 0.7);
     border: 3px solid rgba(238, 238, 238, 0.2);
     border-radius: 2rem;
