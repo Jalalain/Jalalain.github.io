@@ -378,10 +378,10 @@ span{
 }
 .services-box{
     background-color: transparent;
-    height: 470px;
-    width: 500px;
+    height: 500px;
+    max-width: 700px;
     border-radius: 20px;
-    border: 5px solid transparent;
+    border: 4px solid transparent;
     transition: background 0.5s, transform 0.5s;
     box-shadow: 1px 1px 20px var(--main-color),
                 1px 1px 40px var(--main-color);
@@ -402,9 +402,9 @@ span{
     font-size: 15px;
     font-weight: 15px;
     justify-content: left;
-    align-items: baseline;
-    padding: 5rem 5rem;
-    margin-top: auto;
+    align-items: center;
+    padding: 4rem 4rem;
+    margin-top: 1rem;
     border-right: 10px;
     border-radius: 20px;
 }
@@ -420,7 +420,7 @@ span{
 .services-info p{
     font-size: 16px;
     font-weight: 500;
-    max-height: 100px;
+    max-height: 200px;
     line-height: 1.5;
     text-align: left;
     margin: none;
@@ -610,7 +610,7 @@ span{
     .services-container{
         padding-bottom: 7rem;
         grid-template-columns: repeat(2,1fr);
-        margin: 0 5rem;
+        margin: 0 4rem;
     }
 }
 @media(max-width:991px){
@@ -693,5 +693,6 @@ span{
     }
     .services-container{
         grid-template-columns: repeat(1,1fr);
+        margin: 0 auto 0;
     }
 }
